@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<title>Test yourself</title>
+		<link rel="stylesheet" src="css/stylesheet.css"/>
+	</head>
+	
+	<body>
+		<form>
+			<label>Your name</label>
+			<input type="text" />
+			<input type="submit" />
+		</form>
+		<script>
+			var response = confirm("Do you want to provide your details?");
+			alert("Thank you. You said " + response + ".");
+			var name = prompt("Please enter your name here: ");
+			var email = prompt("Please enter your E-mail address here: ");
+			var course = prompt("Please enter the name of the course you are attending here: ");
+			
+			alert("Thank you for submitting your details. Your name is " + name + ".\n Your E-mail address is " +email +".\n The name of the course you are attending is " + course + ".");
+			// \n from python is useable again!! (puts info on new lines)
+			
+			document.writeln("Thank you for submitting your details.<br>Your name is " + name + ".<br>Your E-mail address is " +email +".<br>The name of the course you are attending is " + course + ".");
+			//this writes the info on the webpage instead of disappearing when the prompt is fulfilled
+		</script>
+	</body>
+	
+</html>
